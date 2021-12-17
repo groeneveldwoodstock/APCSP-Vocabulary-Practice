@@ -6,7 +6,7 @@ Vocabulary Quiz Game: Python and TKinter
 </h3>
 <h4>
 Vocabulary from the Khan Academy Website was used for the program. 
-<a href="https://www.khanacademy.org/computing/ap-computer-science-principles/ap-csp-exam-preparation/prepare-for-the-2019-ap-cs-p-exam/a/vocabulary-review" target="_blank">Khan Academy APCSP Vocab</a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.khanacademy.org/computing/ap-computer-science-principles/ap-csp-exam-preparation/prepare-for-the-2019-ap-cs-p-exam/a/vocabulary-review">Khan Academy APCSP Vocab</a>
 </h4>
 <ul>
   <li>Windows Installer File APCSPVocabsetup.exe </li>
@@ -15,7 +15,7 @@ Vocabulary from the Khan Academy Website was used for the program.
     <li>The Mac App may require permission in your security settings to be adjusted to run.</li>
   </ul>
 </ul>
-<a href="https://drive.google.com/file/d/1jMrp-Kg5cGMQGrYV8RH5g70azCSnBYNh/view?usp=sharing" target="_blank">Download Mac App</a>
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1jMrp-Kg5cGMQGrYV8RH5g70azCSnBYNh/view?usp=sharing">Download Mac App</a>
 <br>
-<a href="https://github.com/groeneveldwoodstock/APCSP-Vocabulary-Practice/raw/main/APCSPVocabsetup.exe" target="_blank">Download Windows Installer</a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/groeneveldwoodstock/APCSP-Vocabulary-Practice/raw/main/APCSPVocabsetup.exe">Download Windows Installer</a>
   </body>
