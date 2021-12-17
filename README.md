@@ -3,9 +3,11 @@ Application, written in Python to practice AP Computer Science Principles vocabu
 
 <h3>
 Vocabulary Quiz Game: Python and TKinter
+</h3>
+<h4>
 Vocabulary from the Khan Academy Website was used for the program. 
 <a href="https://www.khanacademy.org/computing/ap-computer-science-principles/ap-csp-exam-preparation/prepare-for-the-2019-ap-cs-p-exam/a/vocabulary-review" target="_blank" rel="noopener noreferrer">Khan Academy APCSP Vocab</a>
-</h3>
+</h4>
 <ul>
   <li>Windows Installer File APCSPVocabsetup.exe </li>
   <li>Put the Mac Application into the applications folder on your Mac to run. </li>
