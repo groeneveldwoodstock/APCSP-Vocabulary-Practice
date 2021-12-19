@@ -1,6 +1,6 @@
 from tkinter import *
-from random import randint
-from words import words
+from random import randint, choice
+from words import words, responses
 score = 0
 
 def get_high_score():
@@ -14,9 +14,14 @@ remaining = 11
 root = Tk()
 root.title('Groeneveld - APCSP Vocabulary')
 root.geometry("650x500")
-root['bg']='#666600'
+root.resizable(width=False, height=False)
+background = PhotoImage(file = 'background.png')
+root['bg']='#F5CBA7'
+background_label = Label(root, image=background)
+background_label.place(x=0, y=0, relwidth=1, relheight=1)
 # get a count of our word list
 count = len(words)
+
 
 
 def next():
@@ -50,7 +55,8 @@ def answer():
     global score
     global best
     if my_entry.get().lower() == (words[random_word][1]).lower():
-        answer_label.config(text="Correct!")
+        random_index = randint(0,len(responses)-1)
+        answer_label.config(text=responses[random_index])
         score = score + 5
         score_label.config(text = 'Score: ' + str(score))
         if score > best:
@@ -64,13 +70,17 @@ def answer():
             except IOError:
                 # Hm, can't write it.
                 print("Unable to save the high score.")
-        
             
     else:
         answer_label.config(text="Incorrect, change answer,\ntry a hint,\n or go to next.")
         score = score - 1
         score_label.config(text = 'Score: ' + str(score))
-        
+def enter(event):
+    check=answer_label['text']
+    if check == "CORRECT!" or check == "EXACTLY RIGHT!" or check == "THAT IS IT!" or check == "PRECISELY!" or check == "THAT IS IT!" or check == "GOOD JOB!" or check == "WAY TO GO!" or check ==  "RIGHT ON!":
+        next()
+    else:
+        answer()
 # Keep Track Of the Hints
 hinter = ""
 hint_count = 0
@@ -100,9 +110,9 @@ definition = Label(root, text="", font=("Helvetica", 18))
 definition.pack(pady=10)
 definition['bg']='#F5CBA7'
 
-answer_label = Label(root, fg='#FFF', font=("Helvetica", 20,'bold'), text="")
+answer_label = Label(root, fg='#FFF', font=("Helvetica", 25,'bold'), text="")
 answer_label.pack(pady=10)
-answer_label['bg']='#666600'
+answer_label['bg']='#000000'
 
 my_entry = Entry(root, font=("Helvetica", 18))
 my_entry.pack(pady=10)
@@ -111,13 +121,14 @@ my_entry.pack(pady=10)
 # Create Buttons
 button_frame = Frame(root)
 button_frame.pack(pady=15)
-button_frame['bg']='#666600'
+button_frame['bg']='#000000'
 rules_frame = Frame(root)
 rules_frame.pack(pady=1)
-rules_frame['bg']='#666600'
+rules_frame['bg']='#000000'
 
 answer_button = Button(button_frame, text="Answer", command=answer)
 answer_button.grid(row=0, column=0, padx=10)
+root.bind('<Return>', enter)
 
 next_button = Button(button_frame, text="Next", command=next)
 next_button.grid(row=0, column=1,padx=10)
@@ -136,7 +147,7 @@ exit_button.grid(row=0, column=1, padx=10)
 # Create Hint Label
 hint_label = Label(root, fg='#FFF', font=("Helvetica", 17,'bold'), text="")
 hint_label.pack(pady=10)
-hint_label['bg']='#666600'
+hint_label['bg']='#000000'
 
 # Create a best score label
 best_label = Label(root, text = 'Best Score: ' + str(best))
@@ -151,3 +162,4 @@ remaining_label.pack(pady=0)
 next()
 
 root.mainloop()
+
