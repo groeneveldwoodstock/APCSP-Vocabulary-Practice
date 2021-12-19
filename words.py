@@ -50,3 +50,7 @@ words = [
     (("An attack where a user is tricked\ninto revealing private information,\noften via a deceptive email."),("Phishing")),
     (("A wireless access point that provides an attacker with\nunauthorized access to the traffic going over the network."),("Rogue access point"))
 ]
+
+responses = ["CORRECT!", "EXACTLY RIGHT!", "THAT IS IT!", "PRECISELY!",
+             "THAT IS IT!", "GOOD JOB!", "WAY TO GO!", "RIGHT ON!"]
+
