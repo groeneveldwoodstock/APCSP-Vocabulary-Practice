@@ -27,5 +27,6 @@ Vocabulary from the Khan Academy Website was used for the program.
 <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1w1rIEYvduMdE3SNKsyBV06bXbnCFCLki/view?usp=sharing">Download Mac App</a>
 <br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/groeneveldwoodstock/APCSP-Vocabulary-Practice/raw/main/APCSP_Vocab_Setup.exe">Download Windows Installer</a>
+<br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/groeneveldwoodstock/APCSP-Vocabulary-Practice/raw/main/APCSP%20Vocab%20Linux">Download Linux App</a>
   </body>
